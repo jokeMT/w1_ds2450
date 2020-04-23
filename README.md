@@ -7,7 +7,7 @@ new Linux Kernel Module for 1wire chip DS2450
 ## read
 
 ### convert
-/sys/bus/w1/devices/20-0000000c0f12/ad_convert 
+/sys/bus/w1/devices/20-*/ad_convert 
 ```
 fmt_a=0.0
 raw_a=0 
@@ -26,7 +26,7 @@ vcc=1
 ```
 
 ### alarm settings
-/sys/bus/w1/devices/20-0000000c0f12/ad_alarm_settings 
+/sys/bus/w1/devices/20-*/ad_alarm_settings 
 ```
 alarm_low_a=0    
 alarm_high_a=255  
@@ -39,7 +39,7 @@ alarm_high_d=255
 ```
 
 ### status/control
-/sys/bus/w1/devices/20-0000000c0f12/ad_status_control 
+/sys/bus/w1/devices/20-*/ad_status_control 
 ```
 output_control_a=0    
 output_enable_a=0    
