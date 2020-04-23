@@ -11,8 +11,7 @@ load:
 	rmmod ${NAME}
 	insmod src/${NAME}.ko
 test:
-	cat /sys/bus/w1/devices/20-*/status_control
-	cat /sys/bus/w1/devices/20-*/convert_all
+	cat /sys/bus/w1/devices/20-*/ad_*
 
 install:
 	cp ${NAME}.ko /lib/modules/$(shell uname -r)/kernel/drivers/w1/slaves/
